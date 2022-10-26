@@ -1,0 +1,112 @@
+body {
+    background-color: white;
+    font-family: Arial;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+}
+
+/* CSS code for the header section of the page */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headtabs {
+    display: flex;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.banner{
+    display: flex;
+    height: 40vh;
+    background-image: url(../images/filler.jpg);
+    background-size: cover;
+}
+
+/* Code refering to the left side respective description (About Me, Projects, etc.)*/
+h2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: flex-start;
+    border-right: 5px solid black;
+    width: 10%;
+    text-align: right;
+}
+/* Code for 4 images/works */
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#firstbox {
+    width: 70vw;
+    height: 70vh;
+}
+
+.filler {
+    width: 33vw;
+    height: 50vh;
+    justify-content: center;
+    background-image: url(../images/filler.jpg);
+    background-size:auto;
+    border: 10px solid black;
+    margin: 10px;
+}
+/* Hover effects */
+.filler:hover{
+    opacity: .75;
+    box-shadow: 10px, 10px 10px, 10px;
+    transition-duration: 1s;
+}
+
+/* Contacts CSS */
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+/* sorting text and boxes on the right side of the sections */
+.right {
+    display: flex;
+    align-content: center;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* In case the viewport is smaller than __ wide */
+@media screen and (max-width:750px) {
+.h2{
+    font-size: 10px;
+}
+
+.banner {
+    height: 20vh;
+}
+
+#firstbox {
+    width: 40vw;
+    height: 40vh;
+}
+
+}
