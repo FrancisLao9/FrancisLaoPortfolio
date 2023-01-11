@@ -44,7 +44,7 @@ header nav {
 
 #photo{
     display: flex;
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-image: url("../images/filler.jpg");
     justify-content: flex-end;
