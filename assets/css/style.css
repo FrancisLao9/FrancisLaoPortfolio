@@ -40,6 +40,28 @@ header nav {
     background-size: cover;
 }
 
+/* Code towards profile and image*/
+
+#photo{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/filler.jpg");
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#profile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 25%;
+    height: 225px;
+    width: 225px;
+    border: 10px solid var(--gray);
+    margin-right: 25px;
+}
+
 /* Code refering to the left side respective description (About Me, Projects, etc.)*/
 h2 {
     display: flex;
